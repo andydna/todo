@@ -12,7 +12,7 @@ class Todo
       exit
     end
 
-    def add(task)
+    def add_new task
       DATA.send(:open, __FILE__, 'a') { |data| data.puts task }
     end
   end
